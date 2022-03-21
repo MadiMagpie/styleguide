@@ -1,10 +1,10 @@
-document.querySelector(".icon").onclick = () => responsive();
+document.getElementsByClassName(".icon").onclick = () =>responsive();
 function responsive() {
         console.log("yikes");
         var x = document.getElementById("topnav");
         if (x.className === "topnav rowflex") {
-          x.className += " responsive";
+          x.className == "topnav rowflex responsive";
         } else {
-          x.className = "topnav";
+          x.className = "topnav rowflex";
         }
       }
