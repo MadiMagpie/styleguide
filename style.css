@@ -12,7 +12,9 @@ main a {
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
 }
-
+main img{
+        margin: auto;
+}
 .rowflex{
         display: flex;
         flex-direction: row;
@@ -44,7 +46,7 @@ main a {
 }
       
 .topnav a:hover {
-        box-shadow: inset 0 -100px 0 0 #7D4D2B;
+        box-shadow: inset 0 -100px 0 0 #ffab67;
         color: white;
 }
       
@@ -143,6 +145,9 @@ h2{
         font-weight: 500;
         color: #494949;
         margin-bottom: 2%;
+        margin-left: 100px;
+        border-left: 10px solid #eb6A00;
+        padding-left: 10px;
 }
 
 .medspace{
@@ -162,10 +167,12 @@ h2{
         font-size: 1rem;
         font-weight: 200;
         margin-bottom:3%;
+        margin-left: 100px;
+
 }
 
 
-/* HOME STUFF */
+/* HOME*/
 
 .index_left{
         width: 60vw;
@@ -177,53 +184,87 @@ h2{
 }
 
 
-.logo_title{
-        width: 115px;
-        border-bottom: 10px solid #eb6A00;
-}
-.visuals_title{
-        width: 165px;
-        border-bottom: 10px solid #eb6A00;
+
+/* LOGO */
+.logo_items img{
+        width:50%;
 }
 
-
-.references_title{
-        width:250px;
-        border-bottom: 10px solid #eb6A00;
-}
-
-
-
-/* COLOUR STUFF  */
+/* COLOUR */
 
 .colour_items img{
-        height: 70%;
-        width: 70%;
-        margin: auto;
+        height: 60%;
+        width: 60%;
 }
 
-/*TYPOGRAPHY STUFF */
-.typography_items img{
-        height: 35%;
-        width: 35%;
-        margin: auto;
-}
-
-
-.grid {
+.gridrow {
         display: grid;
-        width: 75vw;
-        grid-template-rows: repeat(2,50%);
-        grid-template-columns: repeat(3,33%);
+        width: 46vw;
+        /* grid-template-rows: repeat(2,50%);
+        grid-template-columns: repeat(2,50%); */
+        grid-auto-flow: column;
+        margin: auto;
         align-items: center;
         grid-gap: 50px 1px;
 }
 
-.grid img{
+.gridrow img{
         height: auto;
-        width: 75%;
+        width: 90%;
 }
 
+
+/*TYPOGRAPHY*/
+.typography_items img{
+        width: 30%;
+}
+
+.typo{
+        justify-content: space-evenly;
+        width: 65vw;
+        margin: auto;
+}
+.typo img{
+        margin: 0;
+}
+
+/* VISUALS */
+.icons{
+        width: 50vw;
+}
+
+.buttons img{
+        width: 30%;
+        margin: 25px;
+}
+.buttons .rowflex{
+        justify-content:center;
+}
+
+.grid2x2{
+        display: grid;
+        width: 46vw;
+        grid-template-rows: repeat(2,50%);
+        grid-template-columns: repeat(2,50%);
+        grid-gap: 40px 40px;
+        margin: auto;
+}
+.grid2x2 img{
+        width: 100%;
+}
+.gridcol{
+        padding-top: 7%;
+        display: grid;
+        width: 46vw;
+        grid-auto-flow: row;
+        grid-gap: 40px 40px;
+        margin: auto;
+        align-items: center;
+}
+
+.gridcol img{
+        width: 106%;
+}
 
 @media screen and (max-width: 600px) {
         .topnav a:not(:last-child) {
