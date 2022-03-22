@@ -168,6 +168,7 @@ h2{
         font-weight: 200;
         margin-bottom:3%;
         margin-left: 100px;
+        width: fit-content;
 
 }
 
@@ -266,6 +267,16 @@ h2{
         width: 106%;
 }
 
+.ref_section {
+        display: flex;
+        flex-direction: column;
+}
+
+.layout img {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+}
 @media screen and (max-width: 600px) {
         .topnav a:not(:last-child) {
                 display: none;
