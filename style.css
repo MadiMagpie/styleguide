@@ -103,17 +103,14 @@ main img{
         padding-left: 20px;
         color:#eb6A00;
 }
-/* .next:hover .fa-solid{
-        font-size: 1.5rem;
-        transition: font-size .5s ease-in-out;
-} */
+
 
 .bottom{
         background-color: #FFFEFA;
         border-top: 1px solid #ffab67;
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
-        font-size: 0.5rem;
+        font-size: 0.75rem;
         justify-content: space-between;
         position: static;
         left: 0;
