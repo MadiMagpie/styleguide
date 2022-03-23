@@ -169,7 +169,13 @@ h2{
         margin-bottom:3%;
         margin-left: 100px;
         width: fit-content;
-        width: 50vw;
+}
+
+.caption{
+        padding-bottom: 15%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        width: fit-content;
 }
 
 
@@ -210,7 +216,7 @@ h2{
         width: 50vw;
 }
 .logo img{
-        width: 25%;
+        width: 100%;
         margin: 0;
 }
 .wordmark img{
@@ -220,6 +226,12 @@ h2{
         width: 100%;
         margin: auto;
 }
+
+.logo .colflex{
+        justify-content: center;
+        align-items: center;
+}
+
 .clearance img{
         width: 35%;
 }
@@ -234,12 +246,14 @@ h2{
 }
 
 .dont{
-        width: 50vw;
+        width: 43vw;
+        flex-wrap: wrap;
         justify-content: space-between;
 }
 
 .dont img{
-        width: 50%;
+        width: 46%;
+        margin-bottom:4%;
         border: 1px solid red;
 }
 /* COLOUR */
@@ -278,6 +292,8 @@ h2{
 }
 .typo img{
         margin: 0;
+        padding-top: 3%;
+
 }
 
 /* VISUALS */
