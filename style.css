@@ -1,5 +1,7 @@
 body{
         margin: 0;
+        min-height: 100vh;
+        justify-content: space-between;
 }
 
 main{
@@ -30,7 +32,7 @@ main img{
         overflow: hidden;
         justify-content: space-between;
         background-color: #FFFEFA;
-        border-bottom: 1px solid #7D4D2B;
+        border-bottom: 1px solid #ffab67;
 
 }
       
@@ -99,13 +101,16 @@ main img{
         font-size: 1rem;        
         padding-right: 20px;
         padding-left: 20px;
-        color:#8A8572;
+        color:#eb6A00;
 }
-
+/* .next:hover .fa-solid{
+        font-size: 1.5rem;
+        transition: font-size .5s ease-in-out;
+} */
 
 .bottom{
         background-color: #FFFEFA;
-        border-top: 1px solid #8A8572;
+        border-top: 1px solid #ffab67;
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
         font-size: 0.5rem;
@@ -139,7 +144,7 @@ h2{
         height:10%;
         width: 75vw;
         margin: auto;
-        margin-top: 10%;
+        margin-top: 13%;
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
         font-weight: 500;
@@ -150,9 +155,6 @@ h2{
         padding-left: 10px;
 }
 
-.medspace{
-        margin-bottom: 5%;
-}
 
 .main_desc{
         font-family: 'Poppins', sans-serif;
@@ -180,38 +182,59 @@ h2{
 
 
 /* HOME*/
-
+.mainwrap{
+        padding-top: 5%;
+        margin: auto;
+}
 .index_left{
-        width: 60vw;
+        width: 40vw;
 }
 .index_right{
         width: 40vw;
-        height: 40vw;
         justify-content: space-evenly;
+}
+.topright{
+        width: 75%;
+        margin: auto;
+}
+.homenav{
+        margin-top:7%;
+}
+
+.homedesc{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 200;
+        text-align: center;
 }
 
 .hometxt {
         height:10%;
         width: fit-content;
         margin: auto;
-        margin-top: 10%;
+        margin-top: 7%;
         font-family: 'Poppins', sans-serif;
-        font-size: 2rem;
+        font-size: 2.25rem;
         font-weight: 500;
         color: #494949;
         margin-bottom: 2%;
         margin-left: 100px;
         border-left: 10px solid #eb6A00;
-        padding-left: 10px;
+        padding: 1px 10px;
         transition: box-shadow .5s ease-in-out;
 }
 .hometxt a {
         color: #494949;
 }
 .hometxt:hover {
-        box-shadow: inset 220px 0 0 0 #ffab67;
-        color: white;
+        box-shadow: inset 250px 0 0 0 #eb6A00;
 }
+.hometxt:hover a{
+        color: #FFFEFA;
+
+}
+
+
 /* LOGO */
 .logo_items img{
         width:50%;
@@ -229,7 +252,7 @@ h2{
         margin: 0;
 }
 .combined > img{
-        width: 60%;
+        width: 50%;
 }
 
 .logo{
@@ -253,18 +276,25 @@ h2{
         justify-content: center;
         align-items: center;
 }
+.list{
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 200;
+        width: fit-content;
+}
 
 .clearance img{
-        width: 35%;
+        width: 55%;
 }
 
 .clearance img:first-child{
         width: 35%;
         margin-bottom: 5%;
-
 }
-.clearance img:nth-child(2){
-        width: 55%;
+
+.clearance img:last-child{
+        margin-top: 5%;
 }
 
 .dont{
@@ -278,8 +308,8 @@ h2{
         margin-bottom:4%;
         border: 1px solid red;
 }
-/* COLOUR */
 
+/* COLOUR */
 .colour_items img{
         height: 60%;
         width: 60%;
@@ -288,8 +318,6 @@ h2{
 .gridrow {
         display: grid;
         width: 46vw;
-        /* grid-template-rows: repeat(2,50%);
-        grid-template-columns: repeat(2,50%); */
         grid-auto-flow: column;
         margin: auto;
         align-items: center;
@@ -301,10 +329,11 @@ h2{
         width: 90%;
 }
 
-
 /*TYPOGRAPHY*/
-.typography_items img{
+.typo img{
         width: 30%;
+        margin: 0;
+        padding-top: 3%;
 }
 
 .typo{
@@ -312,10 +341,15 @@ h2{
         width: 65vw;
         margin: auto;
 }
-.typo img{
-        margin: 0;
-        padding-top: 3%;
 
+.scale img{
+        padding-top:5%;
+        width:65%;
+        margin: auto;
+}
+
+.scale{
+        justify-content: center;
 }
 
 /* VISUALS */
@@ -366,27 +400,6 @@ h2{
         display: flex;
         justify-content: center;
 }
-@media screen and (max-width: 600px) {
-        .topnav a:not(:last-child) {
-                display: none;
-        }
-        .topnav a.icon {
-          float: right;
-          display: block;
-        }
-        .topnav.responsive {
-          position: relative;
-        }
-        .topnav.responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-}
-        .topnav.responsive a {
-          float: none;
-          display: block;
-          text-align: right;
-        }
-}
+
 
 
